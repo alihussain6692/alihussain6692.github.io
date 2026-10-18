@@ -1,0 +1,25 @@
+HOW TO EDIT THIS SITE (plain HTML, no build step)
+
+Open any .html file in a text editor (VS Code, Notepad). Change the text. Save. Double-click index.html to preview in your browser.
+
+WHICH FILE
+  index.html          Home "Latest" list
+  about.html          About page (text is in the right-hand column; contact/social icons in the left)
+  publications.html   Papers, talks, awards
+  blog.html           Blog list
+  post-template.html  Copy this to write a new blog post
+  style.css           Colours and layout (colours are at the top, under :root)
+  profile.jpg         Put your photo in the main folder (next to index.html) with exactly this name with exactly this name (until then, "SA" initials show)
+
+ADD A PUBLICATION / TALK / AWARD
+  1. In publications.html, copy a whole <article class="post"> ... </article> block, paste it where it belongs (newest first), edit it. Give it a new unique id="...".
+  2. In index.html, copy a block, paste it at the top, and point both links to publications.html#your-id.
+
+ADD A BLOG POST
+  1. Copy post-template.html, rename it (e.g. my-first-post.html), edit it.
+  2. Uncomment/copy the NEW POST block in blog.html and index.html, and point the links to your new file.
+
+UPLOAD
+  Cloudflare Pages -> your project -> Create a new deployment -> drag in the contents of this folder (index.html must be at the top level).
+
+Or just paste the changed file's content to Claude here and say what to change.
